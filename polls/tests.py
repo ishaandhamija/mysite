@@ -10,5 +10,4 @@ class ATest(TestCase):
 
     def test_a(self):
         abc = A.objects.get(b=1)
-        self.assertEqual(
-            abc.get_a(), "abc")
+        self.assertEqual(abc.get_a(), "abc")

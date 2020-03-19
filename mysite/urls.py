@@ -21,9 +21,12 @@ from polls import views
 
 from rest_framework.authtoken.views import obtain_auth_token
 
+from polls.views import get_ass
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ping/', ping),
     url(r'^hello-world/', views.HelloView.as_view()),
-    url(r'^api-token-auth/', obtain_auth_token)
+    url(r'^api-token-auth/', obtain_auth_token),
+    url(r'^get_as/', get_ass)
 ]

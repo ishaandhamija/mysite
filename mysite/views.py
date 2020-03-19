@@ -7,3 +7,4 @@ from rest_framework.response import Response
 def ping(request):
     print ('log aaya')
     return Response(data='Pinged', status=status.HTTP_200_OK)
+

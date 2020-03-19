@@ -76,18 +76,36 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sql12327962',
+#         'USER': 'sql12327962',
+#         'PASSWORD': 'KKqkyRnJZ6',
+#         'HOST': 'sql12.freemysqlhosting.net',
+#         'PORT': 3306,
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'Pi4nW1meVm',
+#         # 'USER': 'Pi4nW1meVm',
+#         'PASSWORD': 'p3hA0Pr8UZ',
+#         'HOST': 'remotemysql.com',
+#         'PORT': 3306,
+#         'TEST': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql12327962',
-        'USER': 'sql12327962',
-        'PASSWORD': 'KKqkyRnJZ6',
-        'HOST': 'sql12.freemysqlhosting.net',
-        'PORT': 3306,
-        'TEST': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
