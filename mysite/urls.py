@@ -17,8 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from mysite.views import ping
+from polls import views
+
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ping/', ping),
+    url(r'^hello-world/', views.HelloView.as_view()),
+    url(r'^api-token-auth/', obtain_auth_token)
 ]
